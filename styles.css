@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   display: flex;
 }
@@ -28,4 +33,13 @@ body {
 .right-container {
   align-self: center;
   margin: 10px;
+}
+
+.right-middle-container {
+  display: flex;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
 }
