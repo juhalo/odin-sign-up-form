@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+}
+
 .left-container {
   height: 100vh;
 }
@@ -19,4 +23,9 @@ body {
   text-align: center;
   color: white;
   width: min(40vw, calc(calc(2313 / 3806) * 100vh));
+}
+
+.right-container {
+  align-self: center;
+  margin: 10px;
 }
