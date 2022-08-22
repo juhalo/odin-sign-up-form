@@ -1,6 +1,11 @@
+:root {
+  --left-width: min(40vw, calc(calc(2313 / 3806) * 100vh));
+}
+
 body {
   padding: 0;
   margin: 0;
+  background-color: lightgray;
 }
 
 * {
@@ -18,7 +23,7 @@ body {
 
 .main-image {
   height: 100vh;
-  width: min(40vw, calc(calc(2313 / 3806) * 100vh));
+  width: var(--left-width);
   position: relative;
 }
 
@@ -27,19 +32,31 @@ body {
   bottom: 0;
   text-align: center;
   color: white;
-  width: min(40vw, calc(calc(2313 / 3806) * 100vh));
+  width: var(--left-width);
 }
 
 .right-container {
   align-self: center;
-  margin: 10px;
+}
+
+.right-middle {
+  background-color: white;
 }
 
 .right-middle-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 p {
   display: flex;
   flex-direction: column;
+}
+
+.right-top {
+  font-weight: bold;
+}
+
+.right-container > * {
+  padding: 30px;
 }
