@@ -6,7 +6,8 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: lightgray;
+  /*background-color: lightgray;*/
+  background-color: darkgray;
 }
 
 * {
@@ -61,6 +62,7 @@ body {
 .right-top {
   width: min(100%, 600px);
   font-size: 18px;
+  color: white;
 }
 
 .sign-up {
@@ -103,4 +105,8 @@ a {
 
 label {
   font-family: 'Courier New', Courier, monospace;
+}
+
+.right-bottom {
+  color: white;
 }
