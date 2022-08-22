@@ -50,19 +50,21 @@ body {
   flex-wrap: wrap;
   column-gap: 20px;
   width: min(530px, 100%);
-  background-color: blueviolet;
 }
 
 .right-middle-container > p {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
   padding-bottom: 20px;
 }
 
 .right-top {
-  font-weight: bold;
   width: min(100%, 600px);
+  font-size: 18px;
+}
+
+.sign-up {
+  font-weight: bold;
 }
 
 .right-container > * {
@@ -71,11 +73,12 @@ body {
 
 legend {
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .hewwo {
   width: min(45%, 250px);
-  background-color: aqua;
 }
 
 .btn {
@@ -96,4 +99,8 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(139, 0, 139);
+}
+
+label {
+  font-family: 'Courier New', Courier, monospace;
 }
