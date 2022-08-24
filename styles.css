@@ -1,20 +1,22 @@
 :root {
   --left-width: min(40vw, calc(calc(2921 / 3814) * 100vh));
-  box-sizing: border-box;
-  height: 100vh;
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: rgb(169, 169, 169);
+  height: 100vh;
 }
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   color: white;
+  box-sizing: border-box;
 }
 
 .container {
@@ -22,11 +24,11 @@ body {
 }
 
 .left-container {
-  height: 100vh;
+  background-color: rgb(42, 39, 39);
 }
 
 .main-image {
-  height: 100vh;
+  height: 99.3vh;
   width: var(--left-width);
   position: relative;
 }
@@ -44,6 +46,8 @@ body {
 
 .right-middle {
   background-color: white;
+  box-shadow: 0 0 15px 0 white;
+  border-radius: 20px;
 }
 
 .right-middle-container {
@@ -57,6 +61,10 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+}
+
+p.password {
+  padding-bottom: 0;
 }
 
 .right-top {
@@ -91,7 +99,8 @@ legend {
   margin-bottom: 20px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255, 0.7);
 }
@@ -108,4 +117,21 @@ label {
 
 input {
   color: black;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.hhh {
+  color: red;
+  font-size: 12px;
+}
+
+input[type='password']:invalid {
+  border: red solid 1px;
+}
+
+.right-middle input:focus {
+  border: 1px solid blue;
 }
