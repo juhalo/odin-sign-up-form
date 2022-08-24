@@ -123,12 +123,12 @@ input {
   outline: none;
 }
 
-.hhh {
+.error {
   color: red;
   font-size: 12px;
 }
 
-input[type='password']:invalid {
+.invalid input[type='password'] {
   border: red solid 1px;
 }
 
