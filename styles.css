@@ -25,10 +25,13 @@ body {
 
 .left-container {
   background-color: rgb(42, 39, 39);
+  background-image: url(./img/pexels-finite-captures-4248214.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-image {
-  height: 99.3vh;
+  height: 100vh;
   width: var(--left-width);
   position: relative;
 }
