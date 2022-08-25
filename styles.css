@@ -1,5 +1,5 @@
 :root {
-  --left-width: min(40vw, calc(calc(2921 / 3814) * 100vh));
+  --left-width: min(40vw, calc(calc(2321 / 3814) * 100vh));
 }
 
 body {
@@ -137,4 +137,19 @@ input {
 
 .right-middle input:focus {
   border: 1px solid blue;
+}
+
+.logo-container {
+  position: absolute;
+  top: 12.5%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: var(--left-width);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.logo {
+  width: 115px;
 }
