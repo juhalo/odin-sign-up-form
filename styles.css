@@ -133,10 +133,12 @@ input {
 
 .invalid input[type='password'] {
   border: red solid 1px;
+  box-shadow: 0 0 1px 0 red;
 }
 
 .right-middle input:focus {
   border: 1px solid blue;
+  box-shadow: 0 0 5px 0 blue;
 }
 
 .logo-container {
