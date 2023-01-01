@@ -1,3 +1,5 @@
+@import url('https://fontlibrary.org//face/noto-sans-normal');
+
 :root {
   --left-width: min(40vw, calc(calc(2321 / 3814) * 100vh));
 }
@@ -90,8 +92,9 @@ legend {
   color: black;
 }
 
-.hewwo {
+.input {
   width: min(45%, 250px);
+  text-transform: uppercase;
 }
 
 .btn {
@@ -154,4 +157,12 @@ input {
 
 .logo {
   width: 115px;
+}
+
+.logo-text {
+  font-family: 'NotoSansRegular', sans-serif;
+}
+
+.finite {
+  text-transform: uppercase;
 }
